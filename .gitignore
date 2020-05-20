@@ -1,0 +1,4 @@
+__generated__
+src/__generated__
+src/sdk.generated.ts
+node_modules

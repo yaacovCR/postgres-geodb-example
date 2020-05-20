@@ -1,0 +1,27 @@
+sources:
+  - name: Geo
+    handler:
+      postgraphile:
+        connectionString: postgres://postgres:docker@localhost:5432/postgres
+    transforms:
+      - prefix:
+          value: Geo
+  - name: Github
+    handler:
+      graphql:
+        endpoint: https://api.github.com/graphql
+        headers:
+          Authorization: bearer ${GH_ACCESS_TOKEN}
+    transforms:
+      - prefix:
+          value: Github
+          includeRootOperations: true
+transforms:
+  - extend: |
+      extend type GeoCity {
+        developers(limit: Int = 10): [GithubUser]
+      }
+require:
+  - ts-node/register/transpile-only
+additionalResolvers:
+  - ./src/mesh/additional-resolvers.ts
