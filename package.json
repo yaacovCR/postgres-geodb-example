@@ -4,27 +4,14 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "pretest-sdk": "yarn mesh:ts && yarn mesh:sdk",
-    "test-sdk": "ts-node src/test-sdk.ts London",
-    "premesh:serve": "yarn mesh:ts",
-    "mesh:serve": "graphql-mesh serve",
-    "mesh:sdk": "graphql-mesh generate-sdk --operations './src/*.graphql' --output ./src/sdk.generated.ts",
-    "mesh:ts": "graphql-mesh typescript --output ./src/mesh/__generated__/types.ts",
-    "start": "yarn mesh:serve"
-  },
-  "devDependencies": {
-    "@types/node": "13.9.0",
-    "ts-node": "8.8.2",
-    "typescript": "3.8.3"
+    "test": "jest src/test.js"
   },
   "dependencies": {
-    "@graphql-mesh/cli": "0.1.17",
-    "@graphql-mesh/transform-extend": "0.1.17",
-    "@graphql-mesh/transform-prefix": "0.1.17",
-    "@graphql-mesh/graphql": "0.1.17",
-    "@graphql-mesh/postgraphile": "0.1.17",
-    "@graphql-mesh/runtime": "0.1.17",
-    "graphql": "15.0.0"
+    "@graphql-tools/utils": "canary",
+    "graphql": "15.0.0",
+    "jest": "^26.0.1",
+    "pg": "^8.2.1",
+    "postgraphile": "^4.7.0"
   },
   "resolutions": {
     "graphql": "15.0.0"
