@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@graphql-tools/utils": "canary",
+    "@graphql-tools/wrap": "^5.0.1-alpha-7084f97.0",
     "graphql": "15.0.0",
     "jest": "^26.0.1",
     "pg": "^8.2.1",

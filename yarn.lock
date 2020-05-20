@@ -270,12 +270,46 @@
   resolved "https://registry.yarnpkg.com/@graphile/lru/-/lru-4.5.0.tgz#e8fe036d322dfe1715675aab171979981e28ac9e"
   integrity sha512-OoIgewLowjegJzz3tpcRE5LpQKqsap1ETFaZtC1r9p36h5ieUJnWTxCTpB7XIsU9muMTt7MMt8x0E5apS47QIQ==
 
+"@graphql-tools/delegate@5.0.1-alpha-7084f97.0":
+  version "5.0.1-alpha-7084f97.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/delegate/-/delegate-5.0.1-alpha-7084f97.0.tgz#3ce48d7f8a1cb8795db6e5c8480b969acdf9aed5"
+  integrity sha512-Er4uZscNt5qIM19eylXMR47hEX8RjjEfFP3/Wug9ld1y2EllNL1MSogf8Y41shSIQifTT6mKVxCKUj9dITA3ag==
+  dependencies:
+    "@graphql-tools/schema" "5.0.1-alpha-7084f97.0"
+    "@graphql-tools/utils" "5.0.1-alpha-7084f97.0"
+    tslib "1.11.1"
+
+"@graphql-tools/schema@5.0.1-alpha-7084f97.0":
+  version "5.0.1-alpha-7084f97.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-5.0.1-alpha-7084f97.0.tgz#7c9f0580bae3b842ce248618819b0939543e89b3"
+  integrity sha512-oglBFhxyGBfTrwX7ECYHt19Vmm8Bl2TD/wuAoeMGcuuljDER4TTuQxrnSy1IqtuXBSsB6OEgFPrIhJXofnxN7A==
+  dependencies:
+    "@graphql-tools/utils" "5.0.1-alpha-7084f97.0"
+    tslib "1.11.1"
+
+"@graphql-tools/utils@5.0.1-alpha-7084f97.0":
+  version "5.0.1-alpha-7084f97.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-5.0.1-alpha-7084f97.0.tgz#5cb55312c822199f82bde4afbd9571a3bfa8a58f"
+  integrity sha512-JJsXqZW8VF/F0fr0pvs2BVBj9gBUlJ/7HNmaBxJZRK6nCQ+Pb8AO9Yh/P9ufn8g9VUGkjfd+8KRQw4LUPffCAQ==
+  dependencies:
+    camel-case "4.1.1"
+
 "@graphql-tools/utils@canary":
   version "6.0.0-alpha-66debc3.0"
   resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-6.0.0-alpha-66debc3.0.tgz#d5db5d1bb4fd79ad945156e4bc73160bab0edb85"
   integrity sha512-FHoHJe6dcKOJqHPtgVFK0SIO5Jp84GBghfUooq69Jrjx1h5sTwj7xKBATY+1XKKJmhf90gvZ4utkKbM4bqYiiQ==
   dependencies:
     camel-case "4.1.1"
+
+"@graphql-tools/wrap@^5.0.1-alpha-7084f97.0":
+  version "5.0.1-alpha-7084f97.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/wrap/-/wrap-5.0.1-alpha-7084f97.0.tgz#3a6a05d5ecbb37b1f0a07cd88347f4bfe4dc0b50"
+  integrity sha512-dsLvZsNFQnwDj9tEFeK702U9W06w4cGWgURFI6OMhhBbUVEbiVbd34Nqiu6i/C5RRjAshY9ZIkwDNmioIHMlcA==
+  dependencies:
+    "@graphql-tools/delegate" "5.0.1-alpha-7084f97.0"
+    "@graphql-tools/schema" "5.0.1-alpha-7084f97.0"
+    "@graphql-tools/utils" "5.0.1-alpha-7084f97.0"
+    tslib "1.11.1"
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
@@ -3918,6 +3952,11 @@ tr46@^2.0.2:
   integrity sha512-3n1qG+/5kg+jrbTzwAykB5yRYtQCTqOGKq5U5PE3b0a1/mzo6snDhjGS0zJVJunO0NrT3Dg1MLy5TjWP/UJppg==
   dependencies:
     punycode "^2.1.1"
+
+tslib@1.11.1:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.11.1.tgz#eb15d128827fbee2841549e171f45ed338ac7e35"
+  integrity sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA==
 
 tslib@^1.10.0, tslib@^1.5.0:
   version "1.13.0"
